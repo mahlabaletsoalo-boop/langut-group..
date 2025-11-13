@@ -1,0 +1,84 @@
+/* Networking & IT Support Section */
+.networking-it {
+  background: #f9fafc;
+  padding: 100px 20px;
+  text-align: center;
+}
+ 
+a.btn {
+    text-decoration: none;
+}
+
+
+
+.networking-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.networking-it h2 {
+  color: #003f7f;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.networking-it p {
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.networking-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+.network-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 30px 25px;
+  text-align: left;
+  transition: all 0.35s ease;
+  max-width: 340px;
+}
+
+.network-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.network-card h3 {
+  color: #0056b3;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.network-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Button reused from previous section */
+.next-page-btn {
+  margin-top: 50px;
+}
+
+/* Fade-in animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

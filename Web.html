@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web & App Development | TechSolutions</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Web & App Development</h1>
+      <p>We build fast, responsive, and scalable digital experiences — from stunning websites to powerful mobile apps that grow with your business.</p>
+      <a href="Quotation.html" class="hero-btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="overview">
+    <h2>What We Do</h2>
+    <p>Our team specializes in designing and developing websites and mobile applications tailored to your business needs. We combine creativity, technology, and strategy to deliver user experiences that make an impact.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Custom Websites</h3>
+        <p>Responsive websites built for performance, branding, and conversion.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Mobile Apps</h3>
+        <p>Cross-platform apps with smooth UI and optimized performance.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>E-Commerce Solutions</h3>
+        <p>Modern online stores with secure payment and inventory systems.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-palette"></i>
+        <h3>UI/UX Design</h3>
+        <p>Beautiful, user-centered designs that enhance usability and appeal.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Maintenance & Security</h3>
+        <p>Ongoing support, updates, and security monitoring for peace of mind.</p>
+      </div>
+    </div>
+  </section>
+  <!-- end of What We Do section -->
+   <section class="showcase">
+  <div class="showcase-container">
+    <img src="w1.jpg" alt="Web and App Design Mockup">
+  </div>
+</section>
+
+
+  <!-- Process -->
+  <section class="process">
+    <h2>Our Development Process</h2>
+    <div class="timeline">
+      <div class="step">
+        <span>1</span>
+        <h4>Discovery</h4>
+        <p>We analyze your goals, target audience, and functionality needs.</p>
+      </div>
+      <div class="step">
+        <span>2</span>
+        <h4>Design</h4>
+        <p>Our team creates modern, responsive mockups tailored to your brand.</p>
+      </div>
+      <div class="step">
+        <span>3</span>
+        <h4>Development</h4>
+        <p>We bring your project to life with clean, scalable, and tested code.</p>
+      </div>
+      <div class="step">
+        <span>4</span>
+        <h4>Launch & Support</h4>
+        <p>We deploy your project and provide continuous maintenance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta" id="contact">
+    <h2>Let's Build Something Amazing Together</h2>
+    <p>Ready to bring your ideas to life? Contact us to start your next web or app project.</p>
+    <a href="contact.html" class="hero-btn">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>TechSolutions</h3>
+        <p>Smart, scalable, and secure IT solutions for the modern world.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechSolutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll animation for cards
+    const elements = document.querySelectorAll('.feature-card, .step');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < triggerBottom) el.classList.add('show');
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>

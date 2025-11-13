@@ -1,0 +1,208 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quotation</title>
+  <link rel="stylesheet" href="Quotation.css">
+</head>
+<body>
+  <section class="quotation-section">
+    <div class="container">
+      <h2>Request a Quotation</h2>
+      <p class="subtitle">
+        Looking for IT solutions or managed services? Fill in the form below and we’ll send you a personalized quotation tailored to your business needs.
+      </p>
+
+      <form class="quotation-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+          <label>Company / Organization</label>
+          <input type="text" placeholder="Enter your company name">
+        </div>
+
+        <div class="form-group full-width">
+          <label>Service Type</label>
+          <select required>
+            <option value="">Select a Service</option>
+            <option>IT Asset Management</option>
+            <option>End User Computing</option>
+            <option>IT Service Management</option>
+            <option>VIP Support</option>
+            <option>Consulting & Training</option>
+            <option>E-Waste Management</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Number of Users / Devices</label>
+          <input type="number" placeholder="e.g., 50">
+        </div>
+
+        <div class="form-group">
+          <label>Expected Start Date</label>
+          <input type="date">
+        </div>
+
+        <div class="form-group full-width">
+          <label>Project Description</label>
+          <textarea placeholder="Briefly describe your project or service requirements..."></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Upload Supporting Document (optional)</label>
+          <input type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg">
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="primary-btn">Request Quote</button>
+          <button type="reset" class="secondary-btn">Clear Form</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Quotation</title>
+  <link rel="stylesheet" href="Quotation.css" />
+  <style>
+    .success-message {
+      text-align: center;
+      color: green;
+      font-weight: 600;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <section class="quotation-section">
+    <div class="container">
+      <h2>Request a Quotation</h2>
+      <p class="subtitle">
+        Looking for IT solutions or managed services? Fill in the form below and we’ll send you a personalized quotation tailored to your business needs.
+      </p>
+
+      <!-- ✅ WhatsApp Form -->
+      <form id="quotationForm" class="quotation-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email address" required />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" />
+        </div>
+
+        <div class="form-group">
+          <label>Company / Organization</label>
+          <input type="text" id="company" placeholder="Enter your company name" />
+        </div>
+
+        <div class="form-group full-width">
+          <label>Service Type</label>
+          <select id="service" required>
+            <option value="">Select a Service</option>
+            <option>IT Asset Management</option>
+            <option>End User Computing</option>
+            <option>IT Service Management</option>
+            <option>VIP Support</option>
+            <option>Consulting & Training</option>
+            <option>E-Waste Management</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Number of Users / Devices</label>
+          <input type="number" id="users" placeholder="e.g., 50" />
+        </div>
+
+        <div class="form-group">
+          <label>Expected Start Date</label>
+          <input type="date" id="startDate" />
+        </div>
+
+        <div class="form-group full-width">
+          <label>Project Description</label>
+          <textarea id="description" placeholder="Briefly describe your project or service requirements..."></textarea>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="primary-btn">Send via WhatsApp</button>
+          <button type="reset" class="secondary-btn">Clear Form</button>
+        </div>
+
+        <p class="success-message" id="successMessage">
+          ✅ Opening WhatsApp — please wait...
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("quotationForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // ✅ Replace with your WhatsApp number (no + or spaces)
+      const phoneNumber = "27726706550"; // example: 27712345678 for South Africa
+
+      // Collect data
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const company = document.getElementById("company").value;
+      const service = document.getElementById("service").value;
+      const users = document.getElementById("users").value;
+      const startDate = document.getElementById("startDate").value;
+      const description = document.getElementById("description").value;
+
+      // Format the message
+      const message = `*Quotation Request*%0A
+Full Name: ${name}%0A
+Email: ${email}%0A
+Phone: ${phone}%0A
+Company: ${company}%0A
+Service Type: ${service}%0A
+Number of Users/Devices: ${users}%0A
+Expected Start Date: ${startDate}%0A
+Project Description: ${description}`;
+
+      // WhatsApp API link
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+      // Show message and open WhatsApp
+      document.getElementById("successMessage").style.display = "block";
+      setTimeout(() => {
+        window.open(whatsappURL, "_blank");
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f6fc;
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #5e2ced;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(94, 44, 237, 0.2);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.offer-card h3 {
+  color: #5e2ced;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.offer-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.how-we-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.work-left, .work-right {
+  flex: 1;
+  min-width: 300px;
+  margin: 15px;
+}
+
+h3 {
+  color: #5e2ced;
+  margin-bottom: 15px;
+}
+
+ol li, ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.contact-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h3 {
+  color: #5e2ced;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5e2ced;
+  outline: none;
+}
+
+.contact-form textarea {
+  grid-column: 1 / -1;
+  min-height: 120px;
+}
+
+button {
+  grid-column: 1 / -1;
+  padding: 14px 0;
+  background: #5e2ced;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #4b22c3;
+}

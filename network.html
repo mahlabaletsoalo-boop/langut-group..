@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Networking &amp; IT Support — Your Company</title>
+  <meta name="description" content="Reliable, secure and scalable network solutions designed to keep your business online, productive and protected." />
+  <link rel="stylesheet" href="network.css" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b74d1; --card-2:#0a62b8; --muted:#9aa8b6; --accent:#0ea5e9; --glass: rgba(255,255,255,0.06);
+      --max-width:1100px;
+      --radius:18px;
+      --pad:28px;
+      --text:#eef6fb;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,#08101a 0%, #0b1a26 70%), url('') center/cover no-repeat; color:var(--text);}
+    .container{max-width:var(--max-width);margin:0 auto;padding:48px 24px}
+
+    /* Hero */
+    .hero{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:56px;background:linear-gradient(90deg, rgba(10,20,30,0.6), rgba(6,10,20,0.35));border-radius:22px;margin-bottom:32px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .hero-left{flex:1}
+    h1{font-size:32px;margin:0 0 12px 0;line-height:1.05}
+    .sub{color:var(--muted);margin:0 0 18px 0}
+    .hero-cta{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--card);border:none;color:white;padding:12px 18px;border-radius:12px;font-weight:600;cursor:pointer;box-shadow:0 6px 20px rgba(11,116,209,0.18)}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+
+    /* grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:18px}
+    .card{background:linear-gradient(180deg,var(--card),var(--card-2));padding:20px;border-radius:14px;color:white;box-shadow:0 8px 30px rgba(8,47,96,0.25);}
+    .card h3{margin:0 0 8px 0;font-size:18px}
+    .card p{margin:0;color:rgba(255,255,255,0.92);font-size:14px}
+
+    /* two column sections */
+    .two-col{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;margin-top:36px}
+    .box{background:var(--glass);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .feature{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:12px;border-radius:10px}
+
+    /* pricing */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+    .price-card{background:white;color:#0b1a26;padding:18px;border-radius:12px}
+    .price-card h4{margin:0 0 6px 0}
+    .price-tag{font-size:20px;font-weight:700;margin:8px 0}
+    .price-list{margin:12px 0 0 0;padding:0;list-style:none}
+    .price-list li{padding:6px 0;border-top:1px dashed rgba(11,26,38,0.06)}
+
+    /* CTA strip */
+    .cta-strip{margin-top:34px;padding:22px;border-radius:12px;background:linear-gradient(90deg, rgba(14,165,233,0.12), rgba(11,116,209,0.08));display:flex;justify-content:space-between;align-items:center}
+
+    /* FAQ */
+    .faq{margin-top:28px}
+    .faq-item{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:10px}
+
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.container{padding:28px}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}.hero{flex-direction:column;align-items:flex-start}.hero-cta{width:100%;justify-content:flex-start}
+      .pricing{grid-template-columns:1fr}.two-col{gap:18px}}
+
+    /* small helper */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Networking & IT Support hero">
+      <div class="hero-left">
+        <h1>Networking &amp; IT Support</h1>
+        <p class="sub">Reliable, secure and scalable network solutions designed to keep your business online, productive and protected.</p>
+        <div class="hero-cta">
+          <a class="btn" id="requestQuote" href="Quotation.html">Request Quote</a>
+          
+        </div>
+      </div>
+      <div style="width:360px;">
+        <div class="box">
+          <strong style="display:block;margin-bottom:6px">Quick facts</strong>
+          <p class="muted" style="margin:0;font-size:14px">Hybrid support: Remote + On-site • 24/7 monitoring options • Scalable packages for 1–1000+ devices</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO GRID -->
+    <section>
+      <h2 style="margin:0 0 10px 0">What We Do</h2>
+      <p class="muted" style="margin:0 0 16px 0">Planning, deployment, troubleshooting, optimization and ongoing maintenance for networks and IT systems.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Network Setup &amp; Configuration</h3>
+          <p>LAN, WAN, Wi‑Fi design and professional installation for stores and offices.</p>
+        </div>
+        <div class="card">
+          <h3>Firewall &amp; Security</h3>
+          <p>Firewall setup, segmentation and continuous monitoring to reduce risk and data loss.</p>
+        </div>
+        <div class="card">
+          <h3>Server &amp; Cloud Support</h3>
+          <p>On‑prem and cloud server setup, backups, and proactive monitoring.</p>
+        </div>
+
+        <div class="card">
+          <h3>Remote Helpdesk</h3>
+          <p>Fast remote support for users — email, software, and connection issues resolved quickly.</p>
+        </div>
+        <div class="card">
+          <h3>On-site Troubleshooting</h3>
+          <p>Local engineers for urgent repairs, hardware issues and complex site work.</p>
+        </div>
+        <div class="card">
+          <h3>Business Communications</h3>
+          <p>VoIP and secure connectivity for remote teams and multi‑site coordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO COLUMN: FEATURES + WHY CHOOSE US -->
+    <section class="two-col">
+      <div>
+        <h3 style="margin-top:0">Problems We Solve</h3>
+        <div class="box">
+          <p class="muted">We identify root causes and remove recurring problems so your team can work without interruptions.</p>
+          <div class="features">
+            <div class="feature"><strong>Slow networks</strong><div class="muted" style="font-size:13px">Improve throughput and reduce latency.</div></div>
+            <div class="feature"><strong>Downtime</strong><div class="muted" style="font-size:13px">Redundancy & monitoring to reduce outages.</div></div>
+            <div class="feature"><strong>Security risks</strong><div class="muted" style="font-size:13px">Firewall, segmentation and threat detection.</div></div>
+            <div class="feature"><strong>Remote access</strong><div class="muted" style="font-size:13px">Secure VPNs and MFA for remote workers.</div></div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:18px">Technologies We Support</h3>
+        <div class="box" style="margin-top:10px">
+          <p class="muted" style="margin:0">Cisco, Mikrotik, Ubiquiti, Fortinet, Sophos, Microsoft 365, Google Workspace, VMware, Hyper‑V and common POS networks.</p>
+        </div>
+      </div>
+
+      <aside>
+        <h3 style="margin-top:0">Why Choose Us</h3>
+        <div class="box">
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Hybrid support (remote + on-site) tailored to your budget</li>
+            <li>Transparent, fixed monthly packages — no surprise bills</li>
+            <li>Certified technicians with retail & office experience</li>
+            <li>Proactive monitoring and regular health checks</li>
+            <li>Priority escalation for business‑critical incidents</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PRICING -->
+    <section style="margin-top:28px">
+      <h3>Pricing Packages</h3>
+      <p class="muted">Choose a plan that fits your size. All prices start from and depend on device count & locations.</p>
+
+      <div class="pricing">
+        <div class="price-card">
+          <h4>Basic Support</h4>
+          <div class="price-tag">From R699 / month</div>
+          <ul class="price-list">
+            <li>Remote helpdesk (business hours)</li>
+            <li>Email & Office suite support</li>
+            <li>Basic network troubleshooting</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h4>Standard Support</h4>
+          <div class="price-tag">From R1 499 / month</div>
+          <ul class="price-list">
+            <li>Basic features + on-site visits</li>
+            <li>Network optimization & backups</li>
+            <li>Monitoring & scheduled maintenance</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h4>Advanced / Enterprise</h4>
+          <div class="price-tag">Custom Quote</div>
+          <ul class="price-list">
+            <li>Server monitoring & SLA</li>
+            <li>Security & firewall management</li>
+            <li>Disaster recovery planning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip">
+      <div>
+        <strong style="display:block">Ready to secure and optimize your IT systems?</strong>
+        <div class="muted" style="font-size:14px">Tell us about your environment and we&apos;ll prepare a custom quote.</div>
+      </div>
+      <div>
+     
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item"><strong>Do you support multi-site businesses?</strong><div class="muted" style="margin-top:6px">Yes — we manage and monitor distributed networks and coordinate local on-site engineers.</div></div>
+      <div class="faq-item"><strong>How do I request on-site support?</strong><div class="muted" style="margin-top:6px">Open a ticket via email or use the Request Quote button — we will propose an SLA and schedule a visit.</div></div>
+      <div class="faq-item"><strong>Can I change packages later?</strong><div class="muted" style="margin-top:6px">Yes. Packages are flexible and can be upgraded or adjusted each billing cycle.</div></div>
+    </section>
+
+    <footer>© <span id="year"></span> Your Company • Networking &amp; IT Support</footer>
+
+  </div>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function openQuote(){
+      const body = {
+        subject: 'Request for Networking & IT Support quote',
+        message: 'Hi — I need a quote for Networking & IT Support. Please contact me with options.'
+      };
+      // Try opening mail client with prefilled mailto
+      const mailto = `mailto:info@yourcompany.com?subject=${encodeURIComponent(body.subject)}&body=${encodeURIComponent(body.message)}`;
+      window.location.href = mailto;
+    }
+
+    document.getElementById('requestQuote').addEventListener('click',openQuote);
+    document.getElementById('requestQuoteBottom').addEventListener('click',openQuote);
+    document.getElementById('learnMore').addEventListener('click',()=>{window.scrollTo({top:400,behavior:'smooth'})});
+  </script>
+</body>
+</html>

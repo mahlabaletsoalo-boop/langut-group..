@@ -1,0 +1,180 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f6fc;
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(90, 30, 200, 0.85), rgba(90, 30, 200, 0.85)), 
+              url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background: #a56eff;
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #8d55f7;
+}
+
+/* Features Section */
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  color: #5e2ced;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(94, 44, 237, 0.2);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #5e2ced;
+  margin-bottom: 15px;
+}
+
+/* Benefits Section */
+.benefits {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.benefit-card {
+  background: #f3edff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: #e9dfff;
+  transform: translateY(-5px);
+}
+
+/* Process Section */
+.process {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.step {
+  background: #f3edff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+}
+
+.step-number {
+  background: #5e2ced;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 12px 18px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  background: linear-gradient(135deg, #5e2ced, #8d55f7);
+  color: white;
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.contact .cta-btn {
+  background: white;
+  color: #5e2ced;
+  font-weight: 600;
+}
+
+.contact .cta-btn:hover {
+  background: #e9dfff;
+}

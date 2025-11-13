@@ -1,0 +1,148 @@
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(to right, #dadae6, #e9e9f0);
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(220, 225, 228, 0.699);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+/* .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f8fafa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+} */
+
+.logo img {
+  height: 45px;   /* Adjust as needed */
+  width: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #131010;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #00e6e6;
+  border-bottom: 2px solid #00e6e6;
+  padding-bottom: 3px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: url('background1.jpg') no-repeat center/cover;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #666ddb;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background: rgb(103, 120, 216);
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background: #cccff0;
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 60px;
+  text-align: center;
+  background: #222;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4064b1;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 14px;
+  color: #888;
+}
